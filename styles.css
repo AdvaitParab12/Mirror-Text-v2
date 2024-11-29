@@ -42,8 +42,6 @@ h1::after {
   background-size: contain;
 }
 
-
-
 h5 {
   margin-bottom: 50px;
   font-size: 1.6rem;
@@ -80,26 +78,26 @@ input {
     background-repeat: no-repeat;
     background-position: center;
     background-color: red;
-    transform: scale(1.1)
+    transform: scale(1.1);
   }
 }
 
-.copyToClipboard{
+.copyToClipboard {
   font-size: 1rem;
   font-weight: 600;
   padding: 1rem 0.5rem;
   margin-left: 3rem;
   border-radius: 0.5rem;
   border: 1px solid black;
-  transition: transform 0.4s ease ;
+  transition: transform 0.4s ease;
   &:hover {
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: red;
-    transform: scale(1.1) ;
+    transform: scale(1.1);
   }
-  &:active{
+  &:active {
     background-color: rgb(255, 76, 76);
   }
 }
@@ -113,7 +111,7 @@ input {
   right: 0;
 }
 
-.error-message{
+.error-message {
   display: none;
   position: absolute;
   top: 40rem;
@@ -122,12 +120,10 @@ input {
   right: 0;
 }
 
-
-
-@media screen and (max-width:960px) {
+@media screen and (max-width: 960px) {
   h1:after {
     display: none;
-  }  
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -136,27 +132,40 @@ input {
     font-size: 3.5rem;
     font-weight: 600;
   }
-  h5{
+  h5 {
     font-size: 1.5rem;
     text-align: center;
   }
-  input{
+  input {
     width: 20rem;
   }
 }
 
-
 @media screen and (max-width: 500px) {
+  body{
+    padding:2rem;
+  }
   h1 {
     margin-bottom: 20px;
     font-size: 2.5rem;
     font-weight: 600;
   }
-  h5{
+  h5 {
     font-size: 1rem;
     text-align: center;
   }
-  input{
-    width: 13rem;
+  input {
+    margin-left: 4rem;
+    width: 100%;
+  }
+  .textbtn {
+    gap : 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .reverseBtn, .copyToClipboard {
+    width: 100%;
+    margin:0;
   }
 }

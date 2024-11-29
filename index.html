@@ -3,29 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
     <title>Mirror • Text</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="flex">
-    <h1>reversify • <span class="rev">mirror</span> anything</h1>
-    <h5>
+  <body class="h-screen w-screen flex flex-col justify-center items-center">
+    <h1 class="mb-8 text-6xl font-semibold relative after-arrows3">
+      reversify • <span class="rev bg-red-700">mirror</span> anything
+    </h1>
+    <h5 class="mb-8 text-xl font-light">
       insert string to <span class="rev">mirror</span>, can be used for things
       like <span class="rev">passwords</span>
     </h5>
-    <div class="text&btn flex">
-      <input type="text" placeholder="Enter Search" autofocus />
+    <div class="textbtn flex">
+      <input
+        class="h-[50px] w-[400px] mr-[70px] rounded-md text-2xl shadow-custom outline-none"
+        type="text"
+        placeholder="Enter Search"
+        autofocus
+      />
       <button class="reverseBtn"></button>
-      <button class="copyToClipboard">Copy</button> 
-      <div class="feedback-message" style="display: none">Copied!</div>
-      <div class="error-message" style="display:none; color: red;"></div>
+      <button class="copyToClipboard">Copy</button>
+      <div
+        class="feedback-message hidden absolute top-[35rem] left-[45rem] bottom-0 right-0"
+        style="display: none"
+      >
+        Copied!
+      </div>
+      <div
+        class="error-message hidden absolute top-[40rem] left-[38rem] bottom-0 right-0"
+        style="display: none; color: red"
+      ></div>
     </div>
     <br />
-    <script src="main.js"></script>
+    <script src="/main.js" type="module"></script>
   </body>
 </html>
